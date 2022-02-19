@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tenta abrir esse site e mudar o tamanho da janela do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 350px)" srcset="imagens/foto-p.jpg">
+        <source media="(max-width: 850px)" srcset="imagens/foto-m.jpg">
+        <source media="(max-width: 2000px)" srcset="imagens/foto-g.jpg">
+        <img src="imagens/foto-full.jpg" alt="">
+    </picture>
+    <h1>Áudio</h1>
+    <p>Vamos reproduzir um áudio</p>
+    <audio src="midia/Raining Blood.mp3" controls></audio>
+    <p>Outra opção é colocar com várias opções, como na imagem dinâmica.</p>
+    <audio controls preload="metadata">
+        <source src='midia/Raining Blood.mp3'>
+        <source src="segundaopcaodeaudio.ogg"> <!--arquivo ficticio-->
+    </audio>
+</body>
+</html>

@@ -1,0 +1,146 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "android";
+    src: url(fontes/idroid.otf);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: rgb(129, 231, 175);
+}
+header{
+    background-image: linear-gradient(rgb(61, 219, 132) 30%, rgb(25, 91, 56));
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+main{
+    background-color: rgb(129, 231, 175);
+}
+
+header h1{
+    text-align: center;
+    padding: 10px 0 10px 0;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+header h2{
+    display: block;
+    font-size: 1em;
+    font-weight: 200;
+    text-align: center;
+    width: 400px;
+    margin: 20px auto;
+}
+
+header ul{
+    margin: 10px 0 0 30px
+}
+header li{
+    font-size: 0.8em;
+    display: inline-block;
+    padding: 5px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+header li:hover{
+    background-color: lightgreen;
+    text-decoration: underline;
+}
+
+.destaque{
+    color:rgb(24, 148, 82);
+    font-weight: 700;
+}
+
+p{
+    text-indent: 30px;
+    text-align: justify;
+}
+
+main article{
+    width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding:  1px 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.493);
+}
+
+article h1{
+    font-family: android;
+    color: rgb(54, 99, 54);
+}
+
+article h2{
+    font-family: android;
+    background-image: linear-gradient(-90deg,white, rgb(183, 255, 215));
+    color: rgb(54, 99, 54);
+    padding: 0 3px;
+}
+
+article a{
+    color:rgb(24, 148, 82);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+article a::after{
+    content: "🔗";
+}
+
+.figura{
+    width: auto;
+    display: inline-block;
+    margin: 0px auto;
+}
+
+.video{
+    width: 780px;
+    padding: 30px;
+    background-color: rgb(54, 99, 54);
+    margin: auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.493);
+}
+
+.tabela{
+    margin: 20px 0px;
+    background-color: rgb(183, 255, 215);
+    border-radius: 0 0 5px 5px;
+}
+.tabela h3{
+    background-color: rgb(81, 173, 81);
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px 5px 0px 0px;
+    margin: 0px auto;
+}
+.tabela p{
+    margin: 0px auto;
+    padding: 20px 5px;
+}
+
+.tabela ul{
+    display: inline-block;
+    width: 300px;
+    margin: 0px 0px 0px 20px;
+    padding: 0px 35px;
+}
+
+footer{
+    background-color: rgb(25, 91, 56);
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    margin: 20px 0px 0px;
+}
+
+footer p{
+    text-align: center;
+}
