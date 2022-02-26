@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabelas grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        caption{
+            background-color: lightgray;
+            font-weight: bold;
+            padding: 5px;
+            font-style: italic;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: rgb(83, 83, 83);
+            color: white;
+        }
+
+        .numero{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas grandes</h1>
+    <p>Para tabelas grandes, é interessante que se use outra configuração semântica/anatômica. Isso é muito importante para mecanismos de busca.</p>
+    <p>Iserimos a cabeça da tabela com o thead; <br>
+    depois o corpo do com o tbody <br>
+    e finalmente o pé com o tfoot
+    </p>
+    <p>A tag th seria para títulos nas tabelas, equivalente a h1 a h6 no corpo do site. A tag td é para dados. Deve semper haver pelo menos um td relativo a um th. Para identificar onde estam os dados relativos àquele th estão usa-se scope="col" ou "row"</p>
+    <p>A tag caption é usada para criar o título da tabela</p>
+
+    <table>
+        <caption>
+            Exemplo população dos estados
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th> <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> São Paulo</td> <td class="numero">45 919 049</td> 
+            </tr>
+            <tr>
+                <td>Minas Gerais</td> <td class="numero"> bla bla bla</td>
+            </tr>
+            <tr>
+                <td> Rio de Janeiro</td> <td class="numero"> ble ble ble</td>
+            </tr>
+            <tr>
+                <td> Baêa</td> <td class="numero">umas redes</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total:</th> <td>um monte de gente</td>
+        </tfoot>
+    </table>
+</body>
+</html>
