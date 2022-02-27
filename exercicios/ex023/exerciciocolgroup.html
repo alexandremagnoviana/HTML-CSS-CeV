@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destaque para coluna em tabelas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 3px;
+        }
+    .col1{
+        background-color: red;
+    }
+    .col2{
+        background-color: green;
+    }
+    .col3{
+        background-color: blue;
+    }
+    </style>
+</head>
+<body>
+    <h1>Destaque para colunas</h1>
+    <p>Para dar destaque a uma linha é muito simples, já que toda a linha obrigatoriamente pertence a uma mesma tag tr e, portanto, basta criar uma classe nessa tag e fi de faina.</p>
+    <p>Porém, dar destaque a uma coluna não é tão simples, especialmente para tabelas com muitas linhas, pois dever-se-ia atribuir uma classe a cada elemento, o que é impraticável em tabelas muito grandes e de difícil manutenção.</p>
+    <p>Para resolver isso pode-se usar o artifício do colgroup, dentro da tag table. Dentro da tag colgroup é possível criar uma tag col para cada coluna e então atribuir classes a ela.</p>
+
+    <table>
+        <colgroup>
+            <col class="col1">
+            <col class="col2"> 
+            <col class="col3" span="2">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <th scope="col">Nome</th> <th scope="col">Sexo</th> <th scope="col">Idade</th> <th scope="col">Profissão</th>
+        </thead>
+        <tr>
+            <td>Ana</td> <td>F</td> <td>25</td> <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Claudio</td> <td>M</td> <td>28</td> <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td> <td>M</td> <td>42</td> <td>Professor</td>
+        </tr>
+    </table>
+
+</body>
+</html>
